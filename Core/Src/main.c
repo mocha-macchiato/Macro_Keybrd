@@ -56,7 +56,7 @@ uint8_t KEYRPTLOCK[8] = {0x08, 0, 0x0f, 0, 0, 0, 0, 0};    // Lock Screen: Win +
 uint8_t KEYRPTSEARCH[8] = {0x01, 0, 0x09, 0, 0, 0, 0, 0};  // Search: Ctrl + F
 uint8_t KEYRPTREPLACE[8] = {0x01, 0, 0x0b, 0, 0, 0, 0, 0}; // Search and Replace: Ctrl + H
 uint8_t KEYRPTEND[8] = {0, 0, 0, 0, 0, 0, 0, 0};
-/* USER CODE END PV */
+/* USER CODE END PV */  
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -119,10 +119,10 @@ int main(void)
       Send_Keybrd_Report(KEYRPTBACK);
       break;
     case 0x03:
-      Send_Keybrd_Report(KEYRPTSWTAB);
+      Send_Keybrd_Report(KEYRPTNEWDIR);
       break;
     case 0x04:
-      Send_Keybrd_Report(KEYRPTREPLACE);
+      Send_Keybrd_Report(KEYRPTLOCK);
       break;
     case 0x05:
       Send_Keybrd_Report(KEYRPTSELALL);
@@ -134,7 +134,7 @@ int main(void)
       Send_Keybrd_Report(KEYRPTPASTE);
       break;
     case 0x08:
-      Send_Keybrd_Report(KEYRPTNEWDIR);
+      Send_Keybrd_Report(KEYRPTREPLACE);
       break;
     }
     /* USER CODE END WHILE */

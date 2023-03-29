@@ -71,30 +71,18 @@ void MX_GPIO_Init(void)
 uint8_t Key_Scan(void)
 {
   uint8_t key_value = 0;
-  if (VK0 == GPIO_PIN_RESET || VK1 == GPIO_PIN_RESET || VK2 == GPIO_PIN_RESET || VK3 == GPIO_PIN_RESET ||
-      VK4 == GPIO_PIN_RESET || VK5 == GPIO_PIN_RESET || VK6 == GPIO_PIN_RESET || VK7 == GPIO_PIN_RESET)
-  {
+  if (!VK0 || !VK1 || !VK2 || !VK3 || !VK4 || !VK5 || !VK6 || !VK7) {
     HAL_Delay(10);
-    if (VK0 == GPIO_PIN_RESET)
-      key_value = 0x01;
-    else if (VK1 == GPIO_PIN_RESET)
-      key_value = 0x02;
-    else if (VK2 == GPIO_PIN_RESET)
-      key_value = 0x03;
-    else if (VK3 == GPIO_PIN_RESET)
-      key_value = 0x04;
-    else if (VK4 == GPIO_PIN_RESET)
-      key_value = 0x05;
-    else if (VK5 == GPIO_PIN_RESET)
-      key_value = 0x06;
-    else if (VK6 == GPIO_PIN_RESET)
-      key_value = 0x07;
-    else if (VK7 == GPIO_PIN_RESET)
-      key_value = 0x08;
+    key_value = VK0;
+    key_value = key_value << 1 + VK1;
+    key_value = key_value << 1 + VK2;
+    key_value = key_value << 1 + VK3;
+    key_value = key_value << 1 + VK4;
+    key_value = key_value << 1 + VK5;
+    key_value = key_value << 1 + VK6;
+    key_value = key_value << 1 + VK7;
   }
-  while (VK0 == GPIO_PIN_RESET || VK1 == GPIO_PIN_RESET || VK2 == GPIO_PIN_RESET || VK3 == GPIO_PIN_RESET ||
-         VK4 == GPIO_PIN_RESET || VK5 == GPIO_PIN_RESET || VK6 == GPIO_PIN_RESET || VK7 == GPIO_PIN_RESET)
-  {
+  while (!VK0 || !VK1 || !VK2 || !VK3 || !VK4 || !VK5 || !VK6 || !VK7) {
     /* code */
   }
   return key_value;
