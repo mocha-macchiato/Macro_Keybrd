@@ -1,0 +1,184 @@
+{
+  "uuid": "c0e8b4477957202d2ffeb20167e355fa",
+  "path": "Offline/Macro_Keybrd",
+  "name": "Macro_Keybrd",
+  "content": "8按键自编程宏建盘",
+  "created_at": "2023-03-13 23:42:47",
+  "updated_at": "2023-03-14 00:43:21",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "816f5ab9949dfac3b6715b39b75ac1c4",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "17d989225e7d42839ef422d52be2b802": 2,
+        "8acffedcc64d4583b0cd25351c4126fa": 8,
+        "9698a5ebc38f435fb5a5f9ff5b84927c": 8,
+        "74c726a870824cbb8220384173aa2e40": 4
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "HDR-F-2.54_1x20",
+          2,
+          "HDR-F-2.54_1X20",
+          "H1,H2",
+          {
+            "BOM_Supplier Part": "C50984",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "d2341d8234464924809729b13422be4a",
+            "uuid": "17d989225e7d42839ef422d52be2b802"
+          }
+        ],
+        [
+          "M3定位孔",
+          4,
+          "3.0MM定位孔",
+          "H3,H4,H5,H6",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ec6f0b6a81664aaba03f363d2db9db2c",
+            "uuid": "74c726a870824cbb8220384173aa2e40"
+          }
+        ],
+        [
+          "凯华轴座-无灯",
+          8,
+          "凯华轴座-无灯",
+          "K1,K2,K3,K4,K5,K6,K7,K8",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "16d339d343894712aa27847b6c10a987",
+            "uuid": "8acffedcc64d4583b0cd25351c4126fa"
+          }
+        ],
+        [
+          "10k",
+          8,
+          "R0805",
+          "R1,R2,R3,R4,R5,R6,R7,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "9698a5ebc38f435fb5a5f9ff5b84927c"
+          }
+        ]
+      ],
+      "updateTime": 1678723062,
+      "createTime": 1678722167,
+      "histories": [],
+      "created_at": "2023-03-13 23:42:47",
+      "updated_at": "2023-03-13 23:57:42"
+    },
+    {
+      "uuid": "5f0cb5fa7743b40de116a731a37c4fd1",
+      "puuid": "c0e8b4477957202d2ffeb20167e355fa",
+      "title": "PCB_Macro_Keybrd",
+      "filename": "PCB_Macro_Keybrd.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "d2341d8234464924809729b13422be4a": 2,
+        "ec6f0b6a81664aaba03f363d2db9db2c": 4,
+        "16d339d343894712aa27847b6c10a987": 8,
+        "b60f399a7a7e41848b2be1eb49c79141": 8
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "HDR-F-2.54_1x20",
+          2,
+          "HDR-F-2.54_1X20",
+          "H1,H2",
+          {
+            "BOM_Supplier Part": "C50984",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "d2341d8234464924809729b13422be4a",
+            "uuid": "17d989225e7d42839ef422d52be2b802"
+          }
+        ],
+        [
+          "M3定位孔",
+          4,
+          "3.0MM定位孔",
+          "H3,H4,H5,H6",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "ec6f0b6a81664aaba03f363d2db9db2c",
+            "uuid": "74c726a870824cbb8220384173aa2e40"
+          }
+        ],
+        [
+          "凯华轴座-无灯",
+          8,
+          "凯华轴座-无灯",
+          "K1,K2,K3,K4,K5,K6,K7,K8",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "16d339d343894712aa27847b6c10a987",
+            "uuid": "8acffedcc64d4583b0cd25351c4126fa"
+          }
+        ],
+        [
+          "10k",
+          8,
+          "R0805",
+          "R1,R2,R3,R4,R5,R6,R7,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "9698a5ebc38f435fb5a5f9ff5b84927c"
+          }
+        ]
+      ],
+      "updateTime": 1678725801,
+      "createTime": 1678723025,
+      "histories": [],
+      "created_at": "2023-03-13 23:57:05",
+      "updated_at": "2023-03-14 00:43:21"
+    }
+  ],
+  "sort": [],
+  "title": "Macro_Keybrd",
+  "foldername": "Macro_Keybrd",
+  "schfilename": "Macro_Keybrd.json",
+  "schfilemtime": 1678723062994
+}
